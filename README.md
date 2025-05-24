@@ -1,6 +1,5 @@
 ﻿#### XORinacci-Code-Force:
 
-Sure! Here's a line-by-line explanation of the C++ code:
 
 ```cpp
 #include <iostream>
