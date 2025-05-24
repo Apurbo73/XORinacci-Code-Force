@@ -79,4 +79,3 @@ int main() {
 
 This program uses the pattern `a`, `b`, `a^b` repeating every 3 steps. By using `n % 3`, it efficiently finds the value in that pattern for any `n`.
 
-Let me know if you'd like a [visual pattern explanation](f), [XOR operation guide](f), or [real-world example](f).
