@@ -79,3 +79,44 @@ int main() {
 
 This program uses the pattern `a`, `b`, `a^b` repeating every 3 steps. By using `n % 3`, it efficiently finds the value in that pattern for any `n`.
 
+
+Great! Here's a **visual explanation** of how the pattern `a`, `b`, `a ^ b` works for any `n`:
+
+---
+
+### 🔁 Pattern Cycle:
+
+We define:
+
+* `apu[0] = a`
+* `apu[1] = b`
+* `apu[2] = a ^ b` (bitwise XOR of `a` and `b`)
+
+Now the result repeats every 3 values of `n`:
+
+| `n` (any value) | `n % 3` | Result |
+| --------------- | ------- | ------ |
+| 0               | 0       | a      |
+| 1               | 1       | b      |
+| 2               | 2       | a ^ b  |
+| 3               | 0       | a      |
+| 4               | 1       | b      |
+| 5               | 2       | a ^ b  |
+| ...             | ...     | ...    |
+
+So, no matter how big `n` is, the answer is simply `apu[n % 3]`.
+
+---
+
+### 🧠 Why XOR (`^`)?
+
+* XOR compares the bits of two numbers:
+
+  * `0 ^ 0 = 0`
+  * `1 ^ 0 = 1`
+  * `0 ^ 1 = 1`
+  * `1 ^ 1 = 0`
+* It's often used in problems involving toggling, parity, or generating patterns with binary properties.
+
+Let me know if you'd like a [bitwise XOR table](f), [code animation](f), or [real coding problem using this trick](f).
+
