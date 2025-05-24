@@ -118,5 +118,4 @@ So, no matter how big `n` is, the answer is simply `apu[n % 3]`.
   * `1 ^ 1 = 0`
 * It's often used in problems involving toggling, parity, or generating patterns with binary properties.
 
-Let me know if you'd like a [bitwise XOR table](f), [code animation](f), or [real coding problem using this trick](f).
 
